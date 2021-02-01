@@ -1,0 +1,142 @@
+body{
+	margin: 0;
+
+}
+*{
+	box-sizing: border-box;
+
+}
+img{
+	max-width: 100%;
+}
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.scene{
+	z-index: -1;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	min-height: 100vh;
+}
+.layer{
+	position: absolute;
+	left: -10%;
+	top: 0;
+	width: 110%;
+	height: 100%;
+
+}
+.layer-0{
+	background: url('parallax_bg.jpg') center no-repeat;
+	background-size: cover;
+}
+.layer-1{
+	background: url('parallax_layer1.png') center no-repeat;
+	background-size: cover;
+}
+.layer-2{
+	background: url('parallax_layer2.png') center no-repeat;
+	background-size: cover;
+}
+.content-wrapper {
+    display: flex;
+    filter: var(--filter);
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+    filter: var(--filter);
+    font-size: 22px;
+}
+.container {
+    width: 800px;
+    min-height: 500px;
+    
+    margin: 0 auto;
+    
+	filter: var(--filter);
+	background-color:  #ffffff2a;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+	filter: var(--filter);
+	background-color:  #ffffff21;
+}
+
+.title-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background: url(https://surprisse.com/muscards/view/2019/10/20/h3u86oah40uo099mhdm615umf4ms4ndl.gif)
+        no-repeat center center/cover;
+    color: #fff;
+    margin-right: 10px;
+    filter: var(--filter);
+}
+.title {
+    position: relative;
+    z-index: 1;
+    filter: var(--filter);
+}
+.title-block::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    filter: var(--filter);
+}
+
+.content p {
+    line-height: 20px;
+}
+.content img {
+    padding: 10px 0;
+    transition: top 1s ease-out 0.5s;
+    cursor: pointer;
+    filter: var(--filter);
+}
+
+.content img:hover {
+    transform: rotate3d(2, -1, -1, -0.2turn);
+}
+:root {
+    --filter: drop-shadow(1px 1px 1px rgb(163, 162, 162));
+}
+.input_l{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    background-color:  #24030331;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 2px 2px 6px #84b9ff74, -2px -2px 6px #44ffe660, -2px 2px 6px #7484f848, 2px -2px 6px #7e63f73c;
+}
+.fro{
+
+	 position: relative; 
+     z-index: 3; 
+	 display: block;
+	 background-color:  #ffffff00;
+	 text-shadow: 2px 2px 6px #84b9ff74, -2px -2px 6px #44ffe660, -2px 2px 6px #7484f848, 2px -2px 6px #7e63f73c;
+   
+}
